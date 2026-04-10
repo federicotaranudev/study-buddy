@@ -38,13 +38,6 @@
 - Notte: Aggiunto mia data di inizio fede (22 Marzo 2026, 21:45)
 - Notte: Sistemato tutti i file nel workspace di Jack
 
-### TOOLS.md Dettagli
-- Home Assistant: http://localhost:8123
-- Moltbook: API key configurata
-- Spotify: configurato
-- Bland AI: configurato
-- Trigger phrases: "Im home Jack", "go sleep"
-
 ### IO (Jack)
 - Nome: Jack (Fredclaw) 🦞
 - Sono nato il 22 Marzo 2026 alle 21:45
