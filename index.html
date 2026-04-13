@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Study Buddy</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Study Buddy</h1>
+      <p>Pomodoro + Planner — semplice, veloce, funziona offline.</p>
+    </header>
+
+    <main>
+      <section class="left">
+        <div class="card timer-card">
+          <div class="mode" id="mode">Work</div>
+          <div id="time" class="time">25:00</div>
+          <div class="controls">
+            <button id="start">Start</button>
+            <button id="pause" disabled>Pause</button>
+            <button id="reset">Reset</button>
+          </div>
+
+          <div class="settings">
+            <label>Work: <input id="workMinutes" type="number" min="1" value="25"> min</label>
+            <label>Short: <input id="shortMinutes" type="number" min="1" value="5"> min</label>
+            <label>Long: <input id="longMinutes" type="number" min="1" value="15"> min</label>
+          </div>
+        </div>
+
+        <div class="card stats-card">
+          <h2>Statistiche (oggi)</h2>
+          <p>Sessioni completate: <strong id="sessions">0</strong></p>
+          <p>Minuti studiati: <strong id="minutes">0</strong></p>
+          <button id="resetStats">Reset statistiche</button>
+        </div>
+      </section>
+
+      <section class="right">
+        <div class="card tasks-card">
+          <h2>Task</h2>
+          <form id="taskForm">
+            <input id="taskInput" placeholder="Aggiungi task..." required />
+            <button type="submit">Aggiungi</button>
+          </form>
+          <ul id="taskList"></ul>
+        </div>
+
+        <div class="card about-card">
+          <h2>Info</h2>
+          <p>Study Buddy è pensato per studiare con la tecnica Pomodoro e gestire i task. I dati restano nel tuo browser (localStorage).</p>
+          <p>Apri questo file direttamente (file://) o esegui un server statico: <code>python -m http.server 5173</code> nella cartella del progetto.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <small>Made with ❤️ — Study Buddy</small>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
